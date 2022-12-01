@@ -10,6 +10,6 @@ Songang Wu. Integrative analysis of single-cell transcriptomics reveals age-asso
     `pip3 install numpy scipy pandas scikit-learn pyro-ppl matplotlib`
 
 ## Tutorial
-Please refer to the [PBMCSCA](https://github.com/ZengFLab/scClassifier2/blob/main/pbmc68k_demo.ipynb) example.
+Please refer to the [PBMCSCA](https://github.com/ZengFLab/scClassifier/tree/main/Example) example.
 
 
