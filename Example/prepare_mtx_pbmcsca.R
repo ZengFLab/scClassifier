@@ -49,9 +49,3 @@ write.table(onehot,
             sep = ',', row.names = F, col.names = T, quote = T)
 
 
-enc <- skl$preprocessing$OneHotEncoder(sparse=FALSE)$fit(seurat@meta.data[cells,'CellType',drop=FALSE])
-onehot <- enc$transform(seurat@meta.data[cells,'CellType',drop=FALSE]) %>% as.data.frame
-colnames(onehot) <- unlist(enc$categories_)
-write.table(onehot, 
-            file = 'pbmcsca_celltype.txt', 
-            sep = ',', row.names = F, col.names = T, quote = T)
